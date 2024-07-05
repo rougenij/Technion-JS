@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex1</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is a sample parapgraph</p>
+    <div>
+      <input type="text" name="addClass" id="addClass" />
+      <button onclick="addClass()">Add Classs</button>
+    </div>
+
+    <a href="index.html">Return to Ex pages</a>
+
+    <script>
+      const addClass = () => {
+        const el = document.querySelector("p");
+        if (document.getElementById("addClass").value == "highlight")
+          el.className = "highlight";
+        if (document.getElementById("addClass").value == "underline")
+          el.className = "underline";
+        if (document.getElementById("addClass").value == "bold")
+          el.className = "bold";
+      };
+    </script>
+  </body>
+</html>

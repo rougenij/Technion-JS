@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex3</title>
+  </head>
+  <style>
+    .pointer {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <button class="pointer" onclick="clickFunc()">Click me</button>
+    <div>
+      <a href="index.html">Return to Ex pages</a>
+    </div>
+
+    <script>
+      function clickFunc() {
+        const btn = document.querySelector("button");
+        btn.textContent = "Clicked!";
+        btn.style.pointerEvents = "none";
+      }
+    </script>
+  </body>
+</html>

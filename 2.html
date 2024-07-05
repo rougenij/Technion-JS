@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex2</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p id="first">This is first paragraph</p>
+      <p id="second">This is second paragraph</p>
+      <p id="third">This is third paragraph</p>
+    </section>
+    <button onclick="hide('1')">Toggle first</button>
+    <button onclick="hide('2')">Toggle second</button>
+    <button onclick="hide('3')">Toggle third</button>
+
+    <div>
+      <a href="index.html">Return to Ex pages</a>
+    </div>
+  </body>
+
+  <script>
+    const hide = (num) => {
+      if (num == 1) {
+        el = document.querySelector("#first");
+        el.classList.toggle("hidden");
+      }
+      if (num == 2) {
+        el = document.querySelector("#second");
+        el.classList.toggle("hidden");
+      }
+      if (num == 3) {
+        el = document.querySelector("#third");
+        el.classList.toggle("hidden");
+      }
+    };
+  </script>
+</html>
